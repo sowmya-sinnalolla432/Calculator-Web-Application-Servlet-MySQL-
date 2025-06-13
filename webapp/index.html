@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simple Calculator</h2>
+        <form action="CalculatorServlet" method="post">
+            <label>Enter First Number:</label>
+            <input type="number" name="num1" required>
+
+            <label>Enter Second Number:</label>
+            <input type="number" name="num2" required>
+
+            <label>Select Operation:</label>
+            <select name="operation" required>
+                <option value="+">Addition (+)</option>
+                <option value="-">Subtraction (-)</option>
+                <option value="*">Multiplication (×)</option>
+                <option value="/">Division (÷)</option>
+            </select>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
